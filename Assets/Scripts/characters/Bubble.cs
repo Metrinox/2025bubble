@@ -4,15 +4,18 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Bubble : MonoBehaviour
 {
-    public float speed = 5f; // Speed of movement
-    public float jumpForce = 5f; // Force applied when jumping
+    public float speed = 3f; // Speed of movement
+    public float jumpForce = 3f; // Force applied when jumping
     public float maxSize = 10f; // Max allowed size
-    public float size = 10f; // Current size of the bubble
+    public float minSize = 1f; // Min allowed size, dont set too small or unity collision can be mysterious
+    public float size; // Current size of the bubble
     public float cost = 0.5f; // Size cost for shooting a bubble
     public GameObject bubblePrefab; // Prefab to shoot
 
     private Rigidbody2D rb; // Rigidbody component
     private bool isGrounded; // Check if the bubble is on the ground
+    private bool onLadder; // check if bubble is on the ladder
+    public float climbSpeed = 3f;
 
     void Start()
     {
@@ -24,38 +27,69 @@ public class Bubble : MonoBehaviour
 
     void Update()
     {
-        // Horizontal movement
+        HandleMovement();
+        HandleShooting();
+        HandleClimbing();
+    }
+
+    private void HandleMovement()
+    {
         float horizontal = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+        Vector2 velocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+        rb.linearVelocity = velocity;
+    }
 
-        // Jumping
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
-        {
-            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-        }
-
-        // Shooting bubbles
+    private void HandleShooting()
+    {
         if (Input.GetKeyDown(KeyCode.Space) && size > cost)
         {
             ShootBubble();
         }
     }
 
+    private void HandleClimbing()
+    {
+        float vertical = Input.GetAxis("Vertical");
+
+        // if (onLadder)
+        // {
+            // rb.linearVelocity = new Vector2(rb.linearVelocity.x, vertical * climbSpeed);
+            // Debug.Log(rb.linearVelocity);
+        // }
+        // else
+        // {
+        if (vertical > 0 && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        }
+        // }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the bubble is grounded
+        // // Check if the bubble is grounded
+        // if (collision.otherCollider.CompareTag("Ladder")) {
+        //     onLadder = true;
+        // } else {
+        //     onLadder = false;
+        // }
+        if (collision.otherCollider.CompareTag("Death")) {
+            Die();
+        }
         isGrounded = true;
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
         // Set isGrounded to false when leaving the ground
+        // onLadder = false;
         isGrounded = false;
     }
 
     void ShootBubble()
     {
-        if (size > cost) {
+        if (size > cost + minSize) {
             // Create a new bubble instance
             GameObject newBubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
 
@@ -67,5 +101,9 @@ public class Bubble : MonoBehaviour
             size -= cost;
             transform.localScale = new Vector3(size/maxSize, size/maxSize, transform.position.z);
         }
+    }
+
+    void Die() {
+        Destroy(this, 0);
     }
 }

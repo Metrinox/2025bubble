@@ -6,7 +6,7 @@ using UnityEngine;
 //let camera follow target
 public class Camera : MonoBehaviour
 {
-    public GameObject player;
+    public Bubble player;
     public float lerpSpeed = 1.0f;
 
     private Vector3 offset;

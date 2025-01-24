@@ -7,6 +7,7 @@ TagManager:
   - solid
   - climable
   - Climbable
+  - Ladder
   layers:
   - Default
   - TransparentFX
