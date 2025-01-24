@@ -96,9 +96,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3353317696366181991}
+  - component: {fileID: 7852922375930045352}
   m_Layer: 0
   m_Name: NewGun
-  m_TagString: Untagged
+  m_TagString: Friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,6 +121,18 @@ Transform:
   - {fileID: 2966782140794736910}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7852922375930045352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5122687966755726469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5918449e01e97594e9c83a7f0749e589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5823456282052713446
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,4 +180,7 @@ MonoBehaviour:
   bubblePrefab: {fileID: 3156208543933187370, guid: 137dd1c3d11d2604bb6689dff993344c, type: 3}
   startXOffset: 0
   startYOffset: 0
-  thrust: 1
+  thrust: 8
+  bubblesPerSecond: 10
+  angularSpray: 15
+  gunDirection: {x: 1, y: 0, z: 0}

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 public class BubbleGunShoot : MonoBehaviour
 {
 
@@ -6,34 +7,37 @@ public class BubbleGunShoot : MonoBehaviour
     public float startXOffset = 0.0f;
     public float startYOffset = 0.0f;
 
-    public float thrust = 100.0f;
-    public int bubblesPerSecond = 20;
+    public float thrust = 200.0f;
+    public float bubblesPerSecond = 20.0f;
+    public float angularSpray = 15.0f;
+    public Vector3 gunDirection = new Vector3(1, 0, 0);
 
-    
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-    }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        ShootWrapper(bubblesPerSecond);
+
+        if (Input.GetMouseButton(0))
+            ShootWrapper(bubblesPerSecond);
     }
 
-    void ShootWrapper(int perSecond)
+    void ShootWrapper(float perSecond)
     {
-        if ( (float) perSecond / 50.0f > Random.value) Shoot();
+        if (perSecond / 50.0f > Random.value) Shoot();
         Debug.Log(Random.value);
     }
 
     void Shoot()
     {
+        gunDirection = transform.parent.rotation * Vector3.right;
         Vector3 startOffset = new Vector3(startXOffset, startYOffset, 0);
+        Quaternion rotation = Quaternion.AngleAxis(angularSpray * (Random.value-0.5f), Vector3.back);
+        Vector3 direction = rotation * gunDirection.normalized;
+
         GameObject bubble = (GameObject) Instantiate(bubblePrefab, transform.position + startOffset, transform.rotation);
         Rigidbody2D rb = bubble.GetComponent<Rigidbody2D>();
-        rb.AddForce(transform.right * thrust);
+        
+        rb.AddForce(direction * thrust);
 
     }
 
