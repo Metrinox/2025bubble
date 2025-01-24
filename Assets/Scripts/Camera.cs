@@ -18,14 +18,15 @@ public class Camera : MonoBehaviour
         if (player == null) return;
         // transform.position = new Vector3(player.transform.position.x,player.transform.position.y, transform.position.z);
 
-        offset = transform.position - player.transform.position;
+        // offset = transform.position - player.transform.position;
+        offset = transform.position - new Vector3(0, player.transform.position.y, 0);
     }
 
     private void Update()
     {
         if (player == null) return;
 
-        targetPos = player.transform.position + offset;
+        targetPos = new Vector3(0, player.transform.position.y, 0) + offset;
         transform.position = Vector3.Lerp(transform.position, targetPos, lerpSpeed * Time.deltaTime);
     }
 
