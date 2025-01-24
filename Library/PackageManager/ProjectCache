@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638731560495250305
-    m_Hash: 185401272
+      ticks: 638732201224646475
+    m_Hash: 1006904248
   m_LockFileStatus:
     m_FilePath: C:/Users/lonzl/git/2025bubble/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638731560782415981
-    m_Hash: 2034512084
+      ticks: 638732201224676459
+    m_Hash: 83242101
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
