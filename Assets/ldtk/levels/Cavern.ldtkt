@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 12,
+    "__cWid": 8,
+    "cachedPixelData": {
+      "opaqueTiles": "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000",
+      "averageColors": "f224f334f334f334f234f334f334f334f564f444f344f555f445f334f434f544f344f234f334f334f334f445f544f434f344f234f234f334f224f667f334f534f334f555f556f764f544f544f434f434f334f335f334f544f444f644f434f334f235f335f334f544f334f224f654f555f335f334f334f224f854f334f335f445f335f348f335f534fb42f555f988f777f887f779f877f668fc97fbbafa99f555f668f679f669f347fc86f344f344f344f335f224f347f235f424000000000000"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Cavern",
+    "padding": 0,
+    "pxHei": 96,
+    "pxWid": 64,
+    "relPath": "arts/tileset/cavesofgallet/cavesofgallet_tiles.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 8,
+    "uid": 17
+  }
+}

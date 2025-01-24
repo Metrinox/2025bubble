@@ -16,7 +16,7 @@ public class Camera : MonoBehaviour
     private void Start()
     {
         if (player == null) return;
-        transform.position = new Vector3(player.transform.position.x,player.transform.position.y, transform.position.z);
+        // transform.position = new Vector3(player.transform.position.x,player.transform.position.y, transform.position.z);
 
         offset = transform.position - player.transform.position;
     }

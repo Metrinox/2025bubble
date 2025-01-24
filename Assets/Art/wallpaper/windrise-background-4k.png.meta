@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      windrise-background-4k_0: -7415970578100689029
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

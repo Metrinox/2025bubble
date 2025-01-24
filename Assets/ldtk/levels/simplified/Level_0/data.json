@@ -4,37 +4,39 @@
 	"x": 0,
 	"y": 0,
 	"width": 1024,
-	"height": 256,
+	"height": 144,
 	"bgColor": "#696A79",
 	"neighbourLevels": [],
 	"customFields" : {},
 	"layers": [
-		"Background.png"
+		"AutoLayer.png",
+		"Cavern.png",
+		"AutoLayer2.png"
 	],
 	"entities": {
-		"Enemy1": [
-			{
-				"id": "Enemy1",
-				"iid": "1e552000-c210-11ef-bfc0-89f592db2f37",
-				"layer": "Entities",
-				"x": 240,
-				"y": 224,
-				"width": 16,
-				"height": 16,
-				"color": 14120515,
-				"customFields" : {}
-			}
-		],
 		"Bubble": [
 			{
 				"id": "Bubble",
-				"iid": "a6e948b0-c210-11ef-a785-e1fe3f03022c",
+				"iid": "8c0ab510-c210-11ef-817b-0ba520e17c99",
 				"layer": "Entities",
 				"x": 32,
-				"y": 224,
-				"width": 16,
-				"height": 16,
+				"y": 112,
+				"width": 8,
+				"height": 8,
 				"color": 12470831,
+				"customFields" : {}
+			}
+		],
+		"Enemy1": [
+			{
+				"id": "Enemy1",
+				"iid": "afa45960-c210-11ef-a940-7b694c06c308",
+				"layer": "Entities",
+				"x": 336,
+				"y": 72,
+				"width": 8,
+				"height": 8,
+				"color": 14120515,
 				"customFields" : {}
 			}
 		]
