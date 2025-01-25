@@ -14,10 +14,12 @@ public class BubbleGunShoot : MonoBehaviour
 
 
 
-    void FixedUpdate()
+    void Update()
     {
 
-        if (Input.GetMouseButton(0))
+        bool canShoot = GetComponentInParent<GunAim>().canShoot;
+
+        if (Input.GetMouseButton(0) && canShoot)
         {
             ShootWrapper(bubblesPerSecond);
             if (transform.parent.transform.parent != null)
