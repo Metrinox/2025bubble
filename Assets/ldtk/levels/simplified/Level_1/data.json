@@ -1,0 +1,104 @@
+{
+	"identifier": "Level_1",
+	"uniqueIdentifer": "843a3180-c210-11ef-b0ec-ef0f80e75cd0",
+	"x": 8,
+	"y": 272,
+	"width": 256,
+	"height": 600,
+	"bgColor": "#696A79",
+	"neighbourLevels": [],
+	"customFields" : {},
+	"layers": [
+		"AutoLayer.png",
+		"Ocean.png",
+		"Cavern.png",
+		"ShallowWater.png",
+		"ShallowWater2.png",
+		"Decorations.png"
+	],
+	"entities": {
+		"Bubble": [
+			{
+				"id": "Bubble",
+				"iid": "2c14a9c0-c210-11ef-b0ec-9d0e9cc8f473",
+				"layer": "Entities",
+				"x": 48,
+				"y": 480,
+				"width": 8,
+				"height": 8,
+				"color": 12470831,
+				"customFields" : {}
+			}
+		],
+		"Fish": [
+			{
+				"id": "Fish",
+				"iid": "31545a20-c210-11ef-b0ec-3344600bb568",
+				"layer": "Entities",
+				"x": 96,
+				"y": 200,
+				"width": 16,
+				"height": 16,
+				"color": 14120515,
+				"customFields" : {}
+			},
+			{
+				"id": "Fish",
+				"iid": "36f69ce0-c210-11ef-b0ec-515537eddc4f",
+				"layer": "Entities",
+				"x": 232,
+				"y": 112,
+				"width": 16,
+				"height": 16,
+				"color": 14120515,
+				"customFields" : {}
+			},
+			{
+				"id": "Fish",
+				"iid": "c2869c10-c210-11ef-b0ec-d5757e9178c0",
+				"layer": "Entities",
+				"x": 240,
+				"y": 200,
+				"width": 16,
+				"height": 16,
+				"color": 14120515,
+				"customFields" : {}
+			}
+		],
+		"BounsBubble": [
+			{
+				"id": "BounsBubble",
+				"iid": "513a17d0-c210-11ef-b0ec-6ba54dfa443f",
+				"layer": "Entities",
+				"x": 224,
+				"y": 112,
+				"width": 8,
+				"height": 8,
+				"color": 15389866,
+				"customFields" : {}
+			},
+			{
+				"id": "BounsBubble",
+				"iid": "53399150-c210-11ef-b0ec-e525a3770c4e",
+				"layer": "Entities",
+				"x": 16,
+				"y": 152,
+				"width": 8,
+				"height": 8,
+				"color": 15389866,
+				"customFields" : {}
+			},
+			{
+				"id": "BounsBubble",
+				"iid": "93b6a970-c210-11ef-b0ec-a3318a90100f",
+				"layer": "Entities",
+				"x": 232,
+				"y": 568,
+				"width": 8,
+				"height": 8,
+				"color": 15389866,
+				"customFields" : {}
+			}
+		]
+	}
+}

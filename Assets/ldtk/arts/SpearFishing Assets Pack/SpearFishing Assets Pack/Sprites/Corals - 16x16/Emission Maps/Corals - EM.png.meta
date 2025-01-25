@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 81c0b68b858941748826a1690ffbe303
+guid: 84e9cac9086b304409bc4a6d07cb1f74
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1076054845471408670
-    second: AutoLayer2_0
+      213: 2166721547951260894
+    second: Corals - EM_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AutoLayer2_0
+      name: Corals - EM_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 106
-        width: 1024
-        height: 38
+        y: 0
+        width: 64
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1249274e2aeeee00800000000000000
-      internalID: 1076054845471408670
+      spriteID: ed4c1d0a4cdb11e10800000000000000
+      internalID: 2166721547951260894
       vertices: []
       indices: 
       edges: []

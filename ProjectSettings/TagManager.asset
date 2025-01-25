@@ -8,6 +8,9 @@ TagManager:
   - climable
   - Climbable
   - Ladder
+  - Death
+  - Bubble
+  - BounsBubble
   layers:
   - Default
   - TransparentFX

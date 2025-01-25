@@ -10,8 +10,11 @@
 	"customFields" : {},
 	"layers": [
 		"AutoLayer.png",
+		"Ocean.png",
 		"Cavern.png",
-		"AutoLayer2.png"
+		"ShallowWater.png",
+		"ShallowWater2.png",
+		"Decorations.png"
 	],
 	"entities": {
 		"Bubble": [
@@ -27,15 +30,15 @@
 				"customFields" : {}
 			}
 		],
-		"Enemy1": [
+		"Fish": [
 			{
-				"id": "Enemy1",
+				"id": "Fish",
 				"iid": "afa45960-c210-11ef-a940-7b694c06c308",
 				"layer": "Entities",
 				"x": 336,
 				"y": 72,
-				"width": 8,
-				"height": 8,
+				"width": 16,
+				"height": 16,
 				"color": 14120515,
 				"customFields" : {}
 			}
