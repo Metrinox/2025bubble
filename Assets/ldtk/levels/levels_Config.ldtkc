@@ -1,0 +1,64 @@
+{
+    "PixelsPerUnit": 8,
+    "CustomLevelPrefab": {
+        "instanceID": 0
+    },
+    "IntGridValueColorsVisible": false,
+    "UseCompositeCollider": true,
+    "GeometryType": 0,
+    "CreateBackgroundColor": true,
+    "CreateLevelBoundsTrigger": false,
+    "UseParallax": true,
+    "IntGridValues": [
+        {
+            "_key": "IntGrid_1",
+            "_asset": {
+                "fileID": 11400000,
+                "guid": "135e043e0b798ca4cb4be29f830cd293",
+                "type": 2
+            }
+        },
+        {
+            "_key": "IntGrid_2",
+            "_asset": {
+                "fileID": 11400000,
+                "guid": "0c79031aa329c7749923848856978658",
+                "type": 2
+            }
+        },
+        {
+            "_key": "IntGrid_3",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "IntGrid_4",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "IntGrid_5",
+            "_asset": {
+                "instanceID": 0
+            }
+        }
+    ],
+    "Entities": [
+        {
+            "_key": "Bubble",
+            "_asset": {
+                "fileID": 668531258677071662,
+                "guid": "da46f671e88ca064f9bf44e362dd59f5",
+                "type": 3
+            }
+        },
+        {
+            "_key": "Enemy1",
+            "_asset": {
+                "instanceID": 0
+            }
+        }
+    ]
+}
