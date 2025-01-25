@@ -337,3 +337,345 @@ Received Import Request.
 Start importing Assets/Scripts/EnemySpawner.cs using Guid(49e84825faf85df4c94281922e5a6643) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '620870ca92c1b45aa8656c793f8f57cf') in 0.0021384 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.194 seconds
+Script 'Camera' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 1.77 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.731 seconds
+Domain Reload Profiling: 2927ms
+	BeginReloadAssembly (348ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (29ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (98ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (725ms)
+		LoadAssemblies (527ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (359ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (322ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1732ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1368ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (216ms)
+			ProcessInitializeOnLoadAttributes (1009ms)
+			ProcessInitializeOnLoadMethodAttributes (120ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 1.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6534 unused Assets / (4.8 MB). Loaded Objects now: 7292.
+Memory consumption went from 154.2 MB to 149.4 MB.
+Total: 14.993400 ms (FindLiveObjects: 1.132700 ms CreateObjectMapping: 0.810600 ms MarkObjects: 9.942500 ms  DeleteObjects: 3.105600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 306.233047 seconds.
+  path: Assets/ldtk/prefabs/characters/bubble.prefab
+  artifactKey: Guid(da46f671e88ca064f9bf44e362dd59f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/prefabs/characters/bubble.prefab using Guid(da46f671e88ca064f9bf44e362dd59f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '292f1f5c6dd8ee083ec52112c7a02790') in 0.7987832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/ldtk/prefabs/characters/Shark.prefab
+  artifactKey: Guid(911071d206ee265468c68524f5b56f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/prefabs/characters/Shark.prefab using Guid(911071d206ee265468c68524f5b56f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6af8e23c23dc8a0038569469605db082') in 0.0131128 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.191 seconds
+Script 'Camera' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 2.80 ms, found 4 plugins.
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.725 seconds
+Domain Reload Profiling: 2919ms
+	BeginReloadAssembly (358ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (41ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (93ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (712ms)
+		LoadAssemblies (538ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (344ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (311ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1726ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1367ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (197ms)
+			ProcessInitializeOnLoadAttributes (1021ms)
+			ProcessInitializeOnLoadMethodAttributes (130ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 2.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6534 unused Assets / (5.1 MB). Loaded Objects now: 7316.
+Memory consumption went from 157.8 MB to 152.7 MB.
+Total: 15.385400 ms (FindLiveObjects: 0.867700 ms CreateObjectMapping: 0.881800 ms MarkObjects: 9.333800 ms  DeleteObjects: 4.299400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.215 seconds
+Script 'Camera' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 1.67 ms, found 4 plugins.
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.771 seconds
+Domain Reload Profiling: 2988ms
+	BeginReloadAssembly (369ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (32ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (86ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (713ms)
+		LoadAssemblies (538ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (365ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (328ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (1772ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1391ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (211ms)
+			ProcessInitializeOnLoadAttributes (1036ms)
+			ProcessInitializeOnLoadMethodAttributes (121ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Refreshing native plugins compatible for Editor in 1.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6534 unused Assets / (5.1 MB). Loaded Objects now: 7318.
+Memory consumption went from 157.6 MB to 152.5 MB.
+Total: 14.174200 ms (FindLiveObjects: 0.897200 ms CreateObjectMapping: 0.849900 ms MarkObjects: 8.536300 ms  DeleteObjects: 3.889200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.198 seconds
+Script 'Camera' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 1.75 ms, found 4 plugins.
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.691 seconds
+Domain Reload Profiling: 2890ms
+	BeginReloadAssembly (334ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (31ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (80ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (736ms)
+		LoadAssemblies (531ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (372ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (340ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1692ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1355ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (221ms)
+			ProcessInitializeOnLoadAttributes (1028ms)
+			ProcessInitializeOnLoadMethodAttributes (92ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 2.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6534 unused Assets / (4.7 MB). Loaded Objects now: 7320.
+Memory consumption went from 157.7 MB to 153.0 MB.
+Total: 14.455700 ms (FindLiveObjects: 0.862900 ms CreateObjectMapping: 1.517800 ms MarkObjects: 8.381300 ms  DeleteObjects: 3.692100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 524.447017 seconds.
+  path: Assets/ldtk/levels/simplified/Level_0/_composite.png
+  artifactKey: Guid(c21d6141134bb634688723acf88bfeb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_0/_composite.png using Guid(c21d6141134bb634688723acf88bfeb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45027a396869eff0f0f8749242b62932') in 0.1140957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025212 seconds.
+  path: Assets/ldtk/levels/simplified/Level_0/Cavern.png
+  artifactKey: Guid(bc124c4d595452f46b2bb3c7fd412269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_0/Cavern.png using Guid(bc124c4d595452f46b2bb3c7fd412269) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d4ca066bb5aa19b8e2ccc0413b85d9b') in 0.0101556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ldtk/levels/simplified/Level_0/Ocean.png
+  artifactKey: Guid(a320d9a060a7013419a07bfece15091f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_0/Ocean.png using Guid(a320d9a060a7013419a07bfece15091f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc75a2d7b489fd53d429236229286d12') in 0.011051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ldtk/levels/simplified/Level_0/ShallowWater2.png
+  artifactKey: Guid(d88b1b2057d1e9a4e8cca1f3a4db21ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_0/ShallowWater2.png using Guid(d88b1b2057d1e9a4e8cca1f3a4db21ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31edf159f2250d269eb63665fee31c87') in 0.0211213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ldtk/levels/simplified/Level_0/IntGrid-int.png
+  artifactKey: Guid(96a5621f79695804196e882b1fb6a4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_0/IntGrid-int.png using Guid(96a5621f79695804196e882b1fb6a4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f49cc9c1ac10bc05f6223d8cd126d5fe') in 0.0211873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.112434 seconds.
+  path: Assets/ldtk/levels/simplified/Level_1/_composite.png
+  artifactKey: Guid(cf2381a8e984dcf4390d4a2c4570a44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_1/_composite.png using Guid(cf2381a8e984dcf4390d4a2c4570a44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00d58abc9543471c005aba60f16e6471') in 0.0136232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ldtk/levels/simplified/Level_1/AutoLayer.png
+  artifactKey: Guid(8e49507a7536ce84aa529c9ff8bbfc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_1/AutoLayer.png using Guid(8e49507a7536ce84aa529c9ff8bbfc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7df3504832ba553aff44cb13a3cd302c') in 0.0122335 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ldtk/levels/simplified/Level_1/ShallowWater.png
+  artifactKey: Guid(9ae4f7cec9c990549afbba691bb1514c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_1/ShallowWater.png using Guid(9ae4f7cec9c990549afbba691bb1514c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da8a341706e0c8393e674a5708ce214f') in 0.0140371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ldtk/levels/simplified/Level_1/Ocean.png
+  artifactKey: Guid(d26db0320731b4340bc4bb33c451659e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_1/Ocean.png using Guid(d26db0320731b4340bc4bb33c451659e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f80b9f551c5eff0c56dcf80714bc345e') in 0.0226324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/ldtk/levels/simplified/Level_1/IntGrid-int.png
+  artifactKey: Guid(7a6ccf73008629b41b9d9fea3d92dda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_1/IntGrid-int.png using Guid(7a6ccf73008629b41b9d9fea3d92dda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de256681664e904142337a23bb83e0d4') in 0.0111095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.723893 seconds.
+  path: Assets/ldtk/levels/simplified/Level_2/_composite.png
+  artifactKey: Guid(05a41eaa7ed34204ebde0c2001e36ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_2/_composite.png using Guid(05a41eaa7ed34204ebde0c2001e36ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '775364d9fff6b3588a4b1287e81a8661') in 0.0125778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ldtk/levels/simplified/Level_2/Decorations.png
+  artifactKey: Guid(1e59f71b324e38944a740984ba55c552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_2/Decorations.png using Guid(1e59f71b324e38944a740984ba55c552) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12a40b9d696a16fbd8315c2c1a7620d4') in 0.0513316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/ldtk/levels/simplified/Level_2/ShallowWater.png
+  artifactKey: Guid(f604149dff1622642897604ac8f770b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_2/ShallowWater.png using Guid(f604149dff1622642897604ac8f770b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d655d80a1f499c725a199ec782c89eb') in 0.0124715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ldtk/levels/simplified/Level_2/AutoLayer.png
+  artifactKey: Guid(8b6d730a2b86b964fa9274d215eee580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ldtk/levels/simplified/Level_2/AutoLayer.png using Guid(8b6d730a2b86b964fa9274d215eee580) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a838ac27d890667ab26c54ec4ad97ec1') in 0.0154523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
