@@ -26,6 +26,6 @@ public class BubbleBehavior : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (!other.gameObject.CompareTag("Friendly")) Destroy(gameObject);
+        if (!other.gameObject.CompareTag("Friendly") && !other.gameObject.CompareTag("Player")) Destroy(gameObject);
     }
 }

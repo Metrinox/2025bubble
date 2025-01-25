@@ -7,7 +7,7 @@ public class GunAim : MonoBehaviour
     public bool canShoot = true;
     void Start()
     {
-        
+        transform.localPosition = Vector3.zero;
     }
 
     // Update is called once per frame

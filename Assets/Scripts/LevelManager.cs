@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public UnityEngine.Vector3 checkpoint = new UnityEngine.Vector3(0,0);
-    public Camera camera;
+    public CameraBehavior camera;
     public Bubble bubblePrefab;
     public Bubble bubble;
     public TextMeshProUGUI respawnText;
