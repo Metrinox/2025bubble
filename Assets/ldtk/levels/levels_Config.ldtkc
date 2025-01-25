@@ -22,7 +22,7 @@
             "_key": "IntGrid_2",
             "_asset": {
                 "fileID": 11400000,
-                "guid": "0c79031aa329c7749923848856978658",
+                "guid": "732d2a7982183a444ba518b99882faa8",
                 "type": 2
             }
         },
@@ -35,7 +35,9 @@
         {
             "_key": "IntGrid_4",
             "_asset": {
-                "instanceID": 0
+                "fileID": 11400000,
+                "guid": "62fb86f67e6d64844b699b57ee20675c",
+                "type": 2
             }
         },
         {
@@ -55,9 +57,33 @@
             }
         },
         {
-            "_key": "Enemy1",
+            "_key": "Fish",
+            "_asset": {
+                "fileID": 393452526529755027,
+                "guid": "e8f1ece233303434ba878711fe555589",
+                "type": 3
+            }
+        },
+        {
+            "_key": "BounsBubble",
+            "_asset": {
+                "fileID": 668531258677071662,
+                "guid": "774e78045fbf0d540806e2ae3284f1a0",
+                "type": 3
+            }
+        },
+        {
+            "_key": "PlasticBottle",
             "_asset": {
                 "instanceID": 0
+            }
+        },
+        {
+            "_key": "Shark",
+            "_asset": {
+                "fileID": 393452526529755027,
+                "guid": "911071d206ee265468c68524f5b56f5a",
+                "type": 3
             }
         }
     ]

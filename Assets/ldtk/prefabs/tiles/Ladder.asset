@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31471dfd53d5490a956a89a1b2d11ad9, type: 3}
   m_Name: Ladder
   m_EditorClassIdentifier: 
-  _colliderType: 2
+  _colliderType: 1
   _customPhysicsSprite: {fileID: 0}
   _tilemapTag: Ladder
   _tilemapLayerMask: 0
   _physicsMaterial: {fileID: 0}
-  _gameObject: {fileID: 0}
+  _gameObject: {fileID: 8934615088287106913, guid: c7defd24589b8ef4cb693fa1cd1c14a4, type: 3}
