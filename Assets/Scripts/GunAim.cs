@@ -21,5 +21,13 @@ public class GunAim : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        if (direction.x < 0)
+        {
+            transform.localScale = new Vector3(1, -1, 1);
+        } else
+        {
+            transform.localScale = Vector3.one;
+        }
     }
 }
