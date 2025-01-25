@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 61dcc98cde3b73443bd303699b68bb1d
+<<<<<<<< HEAD:Assets/Art/enemy2.png.meta
+guid: 10ec522f5243a78438cda856646ec135
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3605045963610566694
-    second: gun (2)_0
+      213: 1344780287051860636
+    second: enemy2_0
+========
+guid: d2290692755e6414c9a171a5e2aca1f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 653070568160126657
+    second: starfield_0
+>>>>>>>> space:Assets/Art/wallpaper/starfield.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gun (2)_0
+<<<<<<<< HEAD:Assets/Art/enemy2.png.meta
+      name: enemy2_0
       rect:
         serializedVersion: 2
-        x: 127
-        y: 111
-        width: 754
-        height: 690
+        x: 3
+        y: 3
+        width: 26
+        height: 26
+========
+      name: starfield_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+>>>>>>>> space:Assets/Art/wallpaper/starfield.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +147,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 620b6fb1432b70230800000000000000
-      internalID: 3605045963610566694
+<<<<<<<< HEAD:Assets/Art/enemy2.png.meta
+      spriteID: c9a8caecb8e99a210800000000000000
+      internalID: 1344780287051860636
+========
+      spriteID: 1c6627cb83c201900800000000000000
+      internalID: 653070568160126657
+>>>>>>>> space:Assets/Art/wallpaper/starfield.png.meta
       vertices: []
       indices: 
       edges: []
@@ -148,7 +172,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gun (2)_0: 3605045963610566694
+<<<<<<<< HEAD:Assets/Art/enemy2.png.meta
+      enemy2_0: 1344780287051860636
+========
+      starfield_0: 653070568160126657
+>>>>>>>> space:Assets/Art/wallpaper/starfield.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
