@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3336482226156112677}
   m_Layer: 0
   m_Name: bubble
-  m_TagString: Untagged
+  m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.5
+  m_GravityScale: 0.03
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -132,9 +132,14 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   maxSize: 10
+  minSize: 1
   size: 10
   cost: 0.5
   bubblePrefab: {fileID: 7080402966209919423, guid: d674924de75c831479ade24729716f00, type: 3}
+  climbSpeed: 3
+  dashCooldown: 2
+  shootCooldown: 1
+  manager: {fileID: 0}
 --- !u!58 &3336482226156112677
 CircleCollider2D:
   m_ObjectHideFlags: 0

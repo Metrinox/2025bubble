@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 3
   tags:
   - Friendly
+  - solid
+  - climable
+  - Climbable
+  - Ladder
+  - Death
+  - Bubble
+  - BounsBubble
   layers:
   - Default
   - TransparentFX
