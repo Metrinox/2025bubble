@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour
+public class DeathManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public UnityEngine.Vector3 checkpoint = new UnityEngine.Vector3(0,0);
@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
     {
         respawnCountDown.enabled = false;
         respawnText.enabled = false;
-        RespawnBubble();
+        // RespawnBubble();
     }
 
     public void RespawnBubble() {
@@ -28,6 +28,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void Die() {
+        Debug.Log("Bubble has entered death stages");
         respawnText.enabled = true;
         respawnCountDown.enabled = true;
         respawnText.transform.position = new UnityEngine.Vector3(camera.transform.position.x, camera.transform.position.y + 2, respawnText.transform.position.z);//camera.transform.position + 3 * UnityEngine.Vector3.up - new UnityEngine.Vector3(0,0,1);
@@ -38,6 +39,7 @@ public class LevelManager : MonoBehaviour
 
     public IEnumerator CountDown(int n)
     {
+        Debug.Log("Now counting down");
         // Start the countdown
         for (int i = n; i > 0; i--)
         {

@@ -23,7 +23,7 @@ public class Bubble : MonoBehaviour
     public float shootCooldown = 1f; // Cooldown duration for shooting
     private float lastShootTime = 0f;
     private float lastDashTime = 0f;
-    public LevelManager manager;
+    public DeathManager manager;
 
     void Start()
     {
@@ -176,6 +176,7 @@ public class Bubble : MonoBehaviour
     }
 
     void Die() {
+        Debug.Log("Calling manager.Die()");
         manager.Die();
         Destroy(gameObject, 0);
     }
