@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using LDtkUnity;
+//using LDtkUnity;
 using UnityEngine;
 
 // The bubble requires a rb to proceed
@@ -122,7 +122,7 @@ public class Bubble : MonoBehaviour
             collision.gameObject.SetActive(false);
         } else if (collision.transform.CompareTag("BubbleBubble")){
             
-        } else {
+        } else if (collision.transform.CompareTag("Enemy")){
             StartCoroutine(Die());
         }
 
@@ -209,6 +209,7 @@ public class Bubble : MonoBehaviour
     public IEnumerator Die() {
         animator.Play("die");
         yield return new WaitForSeconds(1);
+        Destroy(GameObject.Find("FollowPlayer"));
         Destroy(gameObject, 0);
         manager.Die();
     }

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3043697518046710228}
   m_Layer: 0
   m_Name: barracudaPrefab
-  m_TagString: Barracuda
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
