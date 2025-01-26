@@ -7,7 +7,7 @@ public class rainDropSpawner : MonoBehaviour
     public float spawnInterval = 0.2f;    
     public float minX = -8f;               
     public float maxX = 8f;                
-    public float spawnY = 6f;           
+    public float spawnY = 6f;         
 
     private float timer = 0f;
 

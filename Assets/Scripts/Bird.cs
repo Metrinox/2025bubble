@@ -7,10 +7,10 @@ public class Bird : MonoBehaviour
     public float leftBound = -10f;   
     public float rightBound = 10f;   
     public bool movingRight = true; 
+    private float direction; 
 
     void Update()
     {
-
         float direction = movingRight ? 1f : -1f;
         transform.Translate(Vector2.right * direction * speed * Time.deltaTime);
 
