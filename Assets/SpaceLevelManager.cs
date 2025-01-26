@@ -11,11 +11,11 @@ public class SpaceLevelManager : MonoBehaviour
     public TextMeshProUGUI endText; 
     public Camera mainCamera; 
     private float exitCountDown = 5f; 
-    private Animation bubbleDeath; 
+    private Animator bubbleAnim; 
 
-    void Main() 
+    void Start() 
     {
-        bubbleDeath = player.GetComponent<Animation>(); 
+        bubbleAnim = player.GetComponent<Animator>(); 
     }
 
 
@@ -32,8 +32,10 @@ public class SpaceLevelManager : MonoBehaviour
     }
 
     private IEnumerator GameEnd() {
-        // bubbleDeath.Play("BubbleDie"); 
-        Destroy(player); 
+        bubbleAnim.Play("die"); 
+        // StartCoroutine(player.Die()); 
+        yield return new WaitForSeconds(1); 
+        Destroy(player);
         endText.transform.position = new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y + 2, endText.transform.position.z);
         yield return new WaitForSeconds(exitCountDown);
         Application.Quit(); 

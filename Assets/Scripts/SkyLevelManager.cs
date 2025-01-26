@@ -9,7 +9,7 @@ public class SkyLevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.transform.position.y > 77) {
+        if (player != null && player.transform.position.y > 77) {
             SceneManager.LoadScene(4); 
         }
     }
