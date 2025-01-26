@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public UnityEngine.Vector3 checkpoint = new UnityEngine.Vector3(0,0);
+    public UnityEngine.Vector3 checkpoint;
     public CameraBehavior camera;
     public Bubble bubblePrefab;
     public FollowPlayerScript fp;
@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour
     public List<GameObject> disabled = new List<GameObject> {};
     public void Start()
     {
+        checkpoint = new UnityEngine.Vector3(0, 0);
         respawnCountDown.enabled = false;
         respawnText.enabled = false;
         //ResetEnemy();
