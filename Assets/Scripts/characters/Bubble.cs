@@ -1,33 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using LDtkUnity;
 using UnityEngine;
 
 // The bubble requires a rb to proceed
 [RequireComponent(typeof(Rigidbody2D))]
 public class Bubble : MonoBehaviour
 {
-    public float speed = 3f; // Speed of movement
-    public float jumpForce = 3f; // Force applied when jumping
-    public float maxSize = 10f; // Max allowed size
-    public float minSize = 1f; // Min allowed size, dont set too small or unity collision can be mysterious
-    public float size = 10f; // Current size of the bubble
-    public float cost = 0.5f; // Size cost for shooting a bubble
+    public float speed; // Speed of movement
+    public float jumpForce; // Force applied when jumping
+    public float maxSize; // Max allowed size
+    public float minSize; // Min allowed size, dont set too small or unity collision can be mysterious
+    public float size; // Current size of the bubble
+    public float cost; // Size cost for shooting a bubble
     public GameObject bubblePrefab; // Prefab to shoot
 
     private Rigidbody2D rb; // Rigidbody component
     private bool isGrounded; // Check if the bubble is on the ground
     private bool onLadder; // check if bubble is on the ladder
-    public float climbSpeed = 3f;
+    public float climbSpeed;
 
-    public float dashCooldown = 2f; // Cooldown duration for dashing
-    public float shootCooldown = 1f; // Cooldown duration for shooting
+    public float dashCooldown; // Cooldown duration for dashing
+    public float shootCooldown; // Cooldown duration for shooting
     private float lastShootTime = 0f;
     private float lastDashTime = 0f;
-    public DeathManager manager;
+    private bool isAlive = true;
+    public LevelManager manager;
+
+    public float range;
+
+    public Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         // not necessary, but just in case we messed up with the params
         // transform.localScale = new Vector3(size/maxSize, size/maxSize, transform.localScale.z);
@@ -35,16 +42,30 @@ public class Bubble : MonoBehaviour
 
     void Update()
     {
-        HandleMovement();
         HandleShooting();
-        transform.localScale = new Vector3(size/maxSize, size/maxSize, transform.localScale.z);
-
+        // transform.localScale = new Vector3(size/maxSize, size/maxSize, transform.localScale.z);
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        rb.linearVelocity = new Vector3(horizontal * speed, vertical * speed, 0);
         // HandleClimbing();
     }
 
     // void FixedUpdate()
     // {
-    //     Dash();
+    //     float horizontal = Input.GetAxis("Horizontal");
+    //     float vertical = Input.GetAxis("Vertical");
+    //     Debug.Log(Time.time);
+    //     Debug.Log(lastDashTime + dashCooldown);
+    //     if (Time.time > lastDashTime + dashCooldown && horizontal != 0 && vertical != 0) {
+    //         rb.linearVelocity = new Vector3(horizontal * speed, vertical * speed, 0);
+    //         lastDashTime = Time.time;
+    //     }
+    // }
+
+    // private IEnumerator HandleMove() {
+    //     while (true) {
+            
+    //     }
     // }
 
     private void HandleMovement()
@@ -96,9 +117,13 @@ public class Bubble : MonoBehaviour
         if (collision.transform.CompareTag("BounsBubble")) {
             size += collision.gameObject.GetComponent<BounsBubble>().size;
             Debug.Log(size);
-            Destroy(collision.gameObject);
+            transform.localScale = new Vector3(size/maxSize, size/maxSize, transform.localScale.z);
+            manager.disabled.Add(collision.gameObject);
+            collision.gameObject.SetActive(false);
+        } else if (collision.transform.CompareTag("BubbleBubble")){
+            
         } else {
-            Die();
+            StartCoroutine(Die());
         }
 
         // // // Check if the bubble is grounded
@@ -161,23 +186,47 @@ public class Bubble : MonoBehaviour
 
     void ShootBubble()
     {
+        GameObject enemy = DetectEnemy();
         if (size > cost + minSize) {
             // Create a new bubble instance
             GameObject newBubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
 
             // Set the bubble's movement script and speed
             BubbleMovement bubbleMovement = newBubble.GetComponent<BubbleMovement>();
-            bubbleMovement.movementSpeed = 5f; // Set desired speed
-
+            if (enemy != null) {
+                bubbleMovement.dashSpeed = 10f; // Set desired speed
+                bubbleMovement.enemy = enemy;
+            } else {
+                bubbleMovement.moveSpeed = 10f;
+                bubbleMovement.position = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y, 0);
+            }
             // Reduce the size of the current bubble
             size -= cost;
             transform.localScale = new Vector3(size/maxSize, size/maxSize, transform.position.z);
         }
     }
 
-    void Die() {
-        Debug.Log("Calling manager.Die()");
-        manager.Die();
+    public IEnumerator Die() {
+        animator.Play("die");
+        yield return new WaitForSeconds(1);
         Destroy(gameObject, 0);
+        manager.Die();
+    }
+
+    public void Destroy() {
+        Destroy(gameObject, 0);
+    }
+
+    GameObject DetectEnemy()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range);
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.CompareTag("Enemy"))
+            {
+                return collider.gameObject;
+            }
+        }
+        return null;
     }
 }
