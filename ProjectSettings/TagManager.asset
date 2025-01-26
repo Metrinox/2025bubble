@@ -18,6 +18,7 @@ TagManager:
   - Raindrop
   - Bird
   - TriggerNextLevel
+  - Storyboard
   layers:
   - Default
   - TransparentFX
