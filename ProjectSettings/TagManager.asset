@@ -11,6 +11,8 @@ TagManager:
   - Death
   - Bubble
   - BounsBubble
+  - Enemy
+  - BubbleBubble
   layers:
   - Default
   - TransparentFX

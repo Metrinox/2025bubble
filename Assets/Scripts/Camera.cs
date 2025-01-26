@@ -26,7 +26,7 @@ public class Camera : MonoBehaviour
         if (player == null) return;
 
         targetPos = player.transform.position + offset;
-        transform.position = Vector3.Lerp(transform.position, targetPos, lerpSpeed * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, new Vector3(targetPos.x, targetPos.y, transform.position.z), lerpSpeed * Time.deltaTime);
     }
 
 }

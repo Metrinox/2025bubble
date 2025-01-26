@@ -75,7 +75,9 @@
         {
             "_key": "PlasticBottle",
             "_asset": {
-                "instanceID": 0
+                "fileID": 2532297457656445205,
+                "guid": "1aa900d87f849bc46a5007d2849899a8",
+                "type": 3
             }
         },
         {

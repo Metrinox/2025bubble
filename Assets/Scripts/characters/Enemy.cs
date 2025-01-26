@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Fish : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public float moveSpeed = 2f;
     public float dashSpeed = 3f;
@@ -8,14 +8,33 @@ public class Fish : MonoBehaviour
     public float dashCooldown = 4f;
     public float faintDuration = 8f;
     
-    private Vector3 initialPosition;
+    public Vector3 initialPosition;
     private bool isDashing = false;
     private float dashCooldownTimer = 0f;
     private bool isFainted = false;
+    public Rigidbody2D rb;
+    public float rotationSpeed = 2f;
+    public LevelManager manager;
+
+    public int hp;
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log(manager);
+        if (other.collider.CompareTag("BubbleBubble")) {
+        hp -= 1;
+        if (hp <= 0) {
+            manager.disabled.Add(gameObject);
+            gameObject.SetActive(false);
+        }
+        }
+    }
+
 
     void Start()
     {
         initialPosition = transform.position;
+        rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -25,13 +44,14 @@ public class Fish : MonoBehaviour
             return;
         }
 
+        // Check for dash condition
+
         // Handle movement
         if (!isDashing)
         {
             MoveIdle();
         }
 
-        // Check for dash condition
         GameObject bubble = DetectBubble();
         if (bubble != null && !isDashing)
         {
@@ -47,8 +67,8 @@ public class Fish : MonoBehaviour
 
     void MoveIdle()
     {
-        float newX = Mathf.PingPong(Time.time * moveSpeed, 2) - 1;
-        transform.position = new Vector3(initialPosition.x + newX, transform.position.y, transform.position.z);
+        // float newX = Mathf.PingPong(range * moveSpeed, 0.5f) - 1;
+        // transform.position = new Vector3(initialPosition.x + newX, transform.position.y, transform.position.z);
     }
 
     GameObject DetectBubble()
@@ -69,12 +89,27 @@ public class Fish : MonoBehaviour
         isDashing = true;
         Vector3 targetPosition = bubble.transform.position;
 
-        float dashTime = 0.5f;
+        float dashTime = 2f;
         float elapsed = 0f;
 
         while (elapsed < dashTime)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, dashSpeed * Time.deltaTime);
+            // Calculate the direction to the target
+            Vector3 direction = (targetPosition - transform.position).normalized;
+
+            // Update the rotation to face the target direction
+            if (direction.x != 0 && direction.y != 0) // Check to avoid setting rotation to zero
+            {
+                // Calculate the angle in degrees based on the direction
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+    
+                // Create a new rotation with the calculated angle on the Z-axis
+                Quaternion targetRotation = Quaternion.Euler(0, 0, angle);
+                
+                // Smoothly rotate towards the target rotation
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+            }
             elapsed += Time.deltaTime;
             yield return null;
         }
@@ -89,9 +124,8 @@ public class Fish : MonoBehaviour
             // Start cooldown
             dashCooldownTimer = dashCooldown;
         }
-
-        yield return new WaitForSeconds(dashCooldown);
         isDashing = false;
+        yield return new WaitForSeconds(dashCooldown);
     }
 
     void Faint()
@@ -105,5 +139,13 @@ public class Fish : MonoBehaviour
     {
         yield return new WaitForSeconds(faintDuration);
         isFainted = false;
+    }
+
+    public void Reset() {
+        isDashing = false;
+        StopAllCoroutines();
+        transform.position = initialPosition;
+        transform.rotation = Quaternion.identity;
+        rb.linearVelocity = Vector3.zero;
     }
 }

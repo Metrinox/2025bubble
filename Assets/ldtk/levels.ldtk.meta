@@ -37,7 +37,7 @@ ScriptedImporter:
   - _key: BounsBubble
     _asset: {fileID: 668531258677071662, guid: 774e78045fbf0d540806e2ae3284f1a0, type: 3}
   - _key: PlasticBottle
-    _asset: {instanceID: 0}
+    _asset: {fileID: 2532297457656445205, guid: 1aa900d87f849bc46a5007d2849899a8, type: 3}
   - _key: Shark
     _asset: {fileID: 393452526529755027, guid: 911071d206ee265468c68524f5b56f5a, type: 3}
   _enumGenerate: 0
