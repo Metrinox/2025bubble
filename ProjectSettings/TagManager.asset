@@ -14,6 +14,10 @@ TagManager:
   - BounsBubble
   - Enemy
   - BubbleBubble
+  - Barracuda
+  - Raindrop
+  - Bird
+  - TriggerNextLevel
   layers:
   - Default
   - TransparentFX
