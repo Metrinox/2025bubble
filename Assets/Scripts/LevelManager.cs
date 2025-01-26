@@ -20,7 +20,7 @@ public class LevelManager : MonoBehaviour
     {
         respawnCountDown.enabled = false;
         respawnText.enabled = false;
-        ResetEnemy();
+        //ResetEnemy();
         RespawnBubble();
     }
 
@@ -39,19 +39,19 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(CountDown(3));
     }
 
-    public void ResetEnemy() {
-        GameObject[] chasers = GameObject.FindGameObjectsWithTag("Enemy");
-        foreach (GameObject obj in chasers) {
-            Enemy enemy = obj.GetComponent<Enemy>();
-            enemy.manager = this;
-            // chaser.manager = this;
-            enemy.Reset();
-        }
-    }
+    //public void ResetEnemy() {
+    //    GameObject[] chasers = GameObject.FindGameObjectsWithTag("Enemy");
+    //    foreach (GameObject obj in chasers) {
+    //        Enemy enemy = obj.GetComponent<Enemy>();
+    //        enemy.manager = this;
+    //        // chaser.manager = this;
+    //        enemy.Reset();
+    //    }
+    //}
 
     public IEnumerator CountDown(int n)
     {
-        ResetEnemy();
+        //ResetEnemy();
         // Iterate through the list in reverse
         for (int i = disabled.Count - 1; i >= 0; i--)
         {

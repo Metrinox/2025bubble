@@ -209,7 +209,7 @@ public class Bubble : MonoBehaviour
     public IEnumerator Die() {
         animator.Play("die");
         yield return new WaitForSeconds(1);
-        Destroy(GameObject.Find("FollowPlayer"));
+        Destroy(GameObject.Find("FollowPlayer").transform.GetChild(0));
         Destroy(gameObject, 0);
         manager.Die();
     }
