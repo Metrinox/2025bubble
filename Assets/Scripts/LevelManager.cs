@@ -29,7 +29,8 @@ public class LevelManager : MonoBehaviour
     public void RespawnBubble() {
         fp.SetActive(true);
         Debug.Log(bubblePrefab); 
-        bubble = Instantiate(bubblePrefab, checkpoint, UnityEngine.Quaternion.identity);
+        Bubble newBubble = Instantiate(bubblePrefab, checkpoint, UnityEngine.Quaternion.identity);
+        this.bubble = newBubble;
        // Instantiate(fp, checkpoint, UnityEngine.Quaternion.identity);
         bubble.manager = this;
         camera.player = bubble;
@@ -37,6 +38,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void Die() {
+        bubble = null;
         respawnText.enabled = true;
         respawnCountDown.enabled = true;
         respawnText.transform.position = new UnityEngine.Vector3(camera.transform.position.x, camera.transform.position.y + 2, respawnText.transform.position.z);//camera.transform.position + 3 * UnityEngine.Vector3.up - new UnityEngine.Vector3(0,0,1);

@@ -122,8 +122,6 @@ public class Bubble : MonoBehaviour
             transform.localScale = new Vector3(size/maxSize, size/maxSize, transform.localScale.z);
             manager.disabled.Add(collision.gameObject);
             collision.gameObject.SetActive(false);
-        } else if (collision.transform.CompareTag("BubbleBubble")){
-            
         } else if (collision.transform.CompareTag("Enemy")){
             StartCoroutine(Die());
         }
@@ -218,10 +216,6 @@ public class Bubble : MonoBehaviour
         fp.SetActive(false);
 
         //if (gun != null) Destroy(gun);
-        Destroy(gameObject, 0);
-    }
-
-    public void Destroy() {
         Destroy(gameObject, 0);
     }
 

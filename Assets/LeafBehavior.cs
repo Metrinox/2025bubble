@@ -12,13 +12,13 @@ public class LeafBehavior : MonoBehaviour
         if (transform.position.y <= maxY) Destroy(gameObject);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
+    // void OnTriggerEnter2D(Collider2D other)
+    // {
 
-        if (other.CompareTag("Player"))
-        {
-            Destroy(other.gameObject); 
-            Destroy(gameObject);
-        }
-    }
+    //     if (other.CompareTag("Player"))
+    //     {
+    //         Destroy(other.gameObject); 
+    //         Destroy(gameObject);
+    //     }
+    // }
 }
