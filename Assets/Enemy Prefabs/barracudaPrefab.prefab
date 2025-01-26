@@ -77,11 +77,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   approachSpeed: 1
-  dashSpeed: 8
+  dashSpeed: 7
   stopBeforeChargeTime: 0.7
   chargeUpTime: 0.3
   dashTime: 1
   cooldownTime: 2
+  scale: 0.82
 --- !u!95 &2665379348574467270
 Animator:
   serializedVersion: 7

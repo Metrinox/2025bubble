@@ -6,6 +6,7 @@ public class BubbleBehavior : MonoBehaviour
     private float age = 0.0f;
     public float maximumAge = 3.0f;
     public bool isBigBubble = false; // Big Bubbles don't instantly pop
+   
 
     //public float otherForce = 10.0f;
     //public float noise = 3.0f;
@@ -13,6 +14,8 @@ public class BubbleBehavior : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (isBigBubble)transform.GetChild(1).gameObject.SetActive(false);
+
         age += Time.deltaTime;
 
         if (age > maximumAge) Destroy(gameObject);
@@ -29,7 +32,6 @@ public class BubbleBehavior : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (isBigBubble) return;
 
         GameObject go = other.gameObject;
         //Rigidbody2D rb_other = go.GetComponent<Rigidbody2D>();
@@ -39,7 +41,13 @@ public class BubbleBehavior : MonoBehaviour
         //    rb_other.AddForce(transform.rotation * Vector3.up * otherForce);
         //}
 
-        if (!go.CompareTag("Friendly") && !go.CompareTag("Player") && !go.CompareTag("Projectile")) Destroy(gameObject);
-
+        if (!go.CompareTag("Friendly") && !go.CompareTag("Player") && !go.CompareTag("Projectile"))
+        {
+            if (isBigBubble)
+            {
+                transform.GetChild(1).gameObject.SetActive(true);
+            }
+            else Destroy(gameObject);
+        }
     }
 }

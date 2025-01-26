@@ -10,6 +10,7 @@ public class HorizontalPatrol : MonoBehaviour
     public float speed = 2f;      // Movement speed
     public float escapeVelocity = 6f; // Speed at which fish escapes at
     public float maxAge = 10.0f;
+    public bool useMaxAge = true;
 
     private Vector2 pointA;       // First random endpoint
     private Vector2 pointB;       // Second random endpoint
@@ -59,7 +60,7 @@ public class HorizontalPatrol : MonoBehaviour
             transform.localScale = (escapeDirection.x > 0) ? Vector3.one : new(-1, 1, 1);
 
         }
-        currentAge -= Time.deltaTime;
+        if (useMaxAge) currentAge -= Time.deltaTime;
         if (currentAge < 0f) Destroy(gameObject);
 
         
