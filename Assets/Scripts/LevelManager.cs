@@ -8,9 +8,8 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
+    public UnityEngine.Vector3 checkpoint = new UnityEngine.Vector3(0,0);
     public CameraBehavior camera;
-    public UnityEngine.Vector3 checkpoint;
     public Bubble bubblePrefab;
     public Bubble bubble;
     public TextMeshProUGUI respawnText;
