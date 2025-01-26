@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour
     public UnityEngine.Vector3 checkpoint;
     public CameraBehavior camera;
     public Bubble bubblePrefab;
-    public FollowPlayerScript fp;
+    public GameObject fp;
     public Bubble bubble;
     public TextMeshProUGUI respawnText;
     public TextMeshProUGUI respawnCountDown;
@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
     public void Start()
     {
         checkpoint = new UnityEngine.Vector3(0, 0);
+        fp = GameObject.Find("FollowPlayer");
         respawnCountDown.enabled = false;
         respawnText.enabled = false;
         //ResetEnemy();
@@ -26,6 +27,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void RespawnBubble() {
+        fp.SetActive(true);
         Bubble bubble = Instantiate(bubblePrefab, checkpoint, UnityEngine.Quaternion.identity);
        // Instantiate(fp, checkpoint, UnityEngine.Quaternion.identity);
         bubble.manager = this;

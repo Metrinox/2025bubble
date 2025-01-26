@@ -30,11 +30,13 @@ public class Bubble : MonoBehaviour
     public float range;
 
     public Animator animator;
+    private GameObject fp;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        fp = GameObject.Find("FollowPlayer");
 
         // not necessary, but just in case we messed up with the params
         // transform.localScale = new Vector3(size/maxSize, size/maxSize, transform.localScale.z);
@@ -212,7 +214,8 @@ public class Bubble : MonoBehaviour
         
         manager.Die();
 
-        //GameObject gun = GameObject.Find("FollowPlayer").transform.GetChild(0).gameObject;
+        
+        fp.SetActive(false);
 
         //if (gun != null) Destroy(gun);
         Destroy(gameObject, 0);
