@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3043697518046710228}
   m_Layer: 0
   m_Name: Shark
-  m_TagString: Barracuda
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,6 +82,7 @@ MonoBehaviour:
   chargeUpTime: 1.5
   dashTime: 1
   cooldownTime: 3
+  scale: 0.82
 --- !u!95 &2665379348574467270
 Animator:
   serializedVersion: 7

@@ -1,34 +1,19 @@
 fileFormatVersion: 2
-guid: b0eddc1b803f11049b9ef7960679d5e0
+guid: 078b55582c69bba4d9e2c14f17fb62ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4561323317386328818
-    second: Bubble_wand_0
+      213: 4689327332371396593
+    second: maincharacter_0
   - first:
-      213: -145557162241709016
-    second: Bubble_wand_1
+      213: 294176676483396713
+    second: maincharacter_1
   - first:
-      213: 6043068647675824843
-    second: Bubble_wand_2
+      213: -521712934710741187
+    second: maincharacter_2
   - first:
-      213: -7720205468115685899
-    second: Bubble_wand_3
-  - first:
-      213: -1206509074100075029
-    second: Bubble_wand_4
-  - first:
-      213: 6026332008356189354
-    second: Bubble_wand_5
-  - first:
-      213: 8755608228472420854
-    second: Bubble_wand_6
-  - first:
-      213: 6855824718052500656
-    second: Bubble_wand_7
-  - first:
-      213: 22718593939045296
-    second: Bubble_wand_8
+      213: 2977994818989248023
+    second: maincharacter_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +81,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -137,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble_wand_0
+      name: maincharacter_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 79
+        y: 79
+        width: 370
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e054b791c9ce2b0c0800000000000000
-      internalID: -4561323317386328818
+      spriteID: 1f7f6891d56d31140800000000000000
+      internalID: 4689327332371396593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_wand_1
+      name: maincharacter_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 512
-        height: 512
+        x: 575
+        y: 79
+        width: 402
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 82ca11a3880eafdf0800000000000000
-      internalID: -145557162241709016
+      spriteID: 9647ffee020251400800000000000000
+      internalID: 294176676483396713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_wand_2
+      name: maincharacter_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 512
-        height: 512
+        x: 1087
+        y: 79
+        width: 402
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bca8402eaea4dd350800000000000000
-      internalID: 6043068647675824843
+      spriteID: d37f6db99d082c8f0800000000000000
+      internalID: -521712934710741187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_wand_3
+      name: maincharacter_3
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 512
-        height: 512
+        x: 1615
+        y: 79
+        width: 386
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,96 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fdafe7b7025cd490800000000000000
-      internalID: -7720205468115685899
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bubble_wand_4
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be5caf3b36e914fe0800000000000000
-      internalID: -1206509074100075029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bubble_wand_5
-      rect:
-        serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa413a06805d1a350800000000000000
-      internalID: 6026332008356189354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bubble_wand_6
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f9f59a6b4b228970800000000000000
-      internalID: 8755608228472420854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bubble_wand_7
-      rect:
-        serializedVersion: 2
-        x: 3584
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b4acd1e148c42f50800000000000000
-      internalID: 6855824718052500656
+      spriteID: 71ecec08286f35920800000000000000
+      internalID: 2977994818989248023
       vertices: []
       indices: 
       edges: []
@@ -316,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0828ee04faa1bd740bc2cda83f147d92
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -326,14 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bubble_wand_0: -4561323317386328818
-      Bubble_wand_1: -145557162241709016
-      Bubble_wand_2: 6043068647675824843
-      Bubble_wand_3: -7720205468115685899
-      Bubble_wand_4: -1206509074100075029
-      Bubble_wand_5: 6026332008356189354
-      Bubble_wand_6: 8755608228472420854
-      Bubble_wand_7: 6855824718052500656
+      maincharacter_0: 4689327332371396593
+      maincharacter_1: 294176676483396713
+      maincharacter_2: -521712934710741187
+      maincharacter_3: 2977994818989248023
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

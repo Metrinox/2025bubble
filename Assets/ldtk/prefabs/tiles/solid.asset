@@ -17,4 +17,4 @@ MonoBehaviour:
   _tilemapTag: solid
   _tilemapLayerMask: 0
   _physicsMaterial: {fileID: 0}
-  _gameObject: {fileID: 0}
+  _gameObject: {fileID: 3327193325629191290, guid: 92b2633b29612374db97fb31a316a12e, type: 3}

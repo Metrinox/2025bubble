@@ -1,34 +1,52 @@
 fileFormatVersion: 2
-guid: b0eddc1b803f11049b9ef7960679d5e0
+guid: 8bfe67eddd43771408188ba3cc880bd5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4561323317386328818
-    second: Bubble_wand_0
+      213: 8110567383642796410
+    second: Bubble_die_0
   - first:
-      213: -145557162241709016
-    second: Bubble_wand_1
+      213: 2805932428444564712
+    second: Bubble_die_1
   - first:
-      213: 6043068647675824843
-    second: Bubble_wand_2
+      213: -5214706768663986471
+    second: Bubble_die_2
   - first:
-      213: -7720205468115685899
-    second: Bubble_wand_3
+      213: 8832966508994984598
+    second: Bubble_die_3
   - first:
-      213: -1206509074100075029
-    second: Bubble_wand_4
+      213: -239247962696592972
+    second: Bubble_die_4
   - first:
-      213: 6026332008356189354
-    second: Bubble_wand_5
+      213: -6587222053265730726
+    second: Bubble_die_5
   - first:
-      213: 8755608228472420854
-    second: Bubble_wand_6
+      213: 6893481994984120019
+    second: Bubble_die_6
   - first:
-      213: 6855824718052500656
-    second: Bubble_wand_7
+      213: 6288246707565726869
+    second: Bubble_die_7
   - first:
-      213: 22718593939045296
-    second: Bubble_wand_8
+      213: 7616923464271878139
+    second: Bubble_die_8
+  - first:
+      213: 7613673129074102373
+    second: Bubble_die_9
+  - first:
+      213: -7040516746412584298
+    second: Bubble_die_10
+  - first:
+      213: 2765872358575744659
+    second: Bubble_die_11
+  - first:
+      213: 7708114716638621691
+    second: Bubble_die_12
+  - first:
+      213: -7448841499849136698
+    second: Bubble_die_13
+  - first:
+      213: -2597470210538965335
+    second: Bubble_die_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +114,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -137,13 +155,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble_wand_0
+      name: Bubble_die_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 640
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e054b791c9ce2b0c0800000000000000
-      internalID: -4561323317386328818
+      spriteID: a71f5e450168e8070800000000000000
+      internalID: 8110567383642796410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_wand_1
+      name: Bubble_die_1
       rect:
         serializedVersion: 2
-        x: 512
+        x: 640
         y: 0
-        width: 512
-        height: 512
+        width: 640
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 82ca11a3880eafdf0800000000000000
-      internalID: -145557162241709016
+      spriteID: 8ecff2d5daca0f620800000000000000
+      internalID: 2805932428444564712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_wand_2
+      name: Bubble_die_2
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1280
         y: 0
-        width: 512
-        height: 512
+        width: 640
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bca8402eaea4dd350800000000000000
-      internalID: 6043068647675824843
+      spriteID: 9de35f592d3a1a7b0800000000000000
+      internalID: -5214706768663986471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_wand_3
+      name: Bubble_die_3
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1920
         y: 0
-        width: 512
-        height: 512
+        width: 640
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,42 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fdafe7b7025cd490800000000000000
-      internalID: -7720205468115685899
+      spriteID: 69a7199ad30059a70800000000000000
+      internalID: 8832966508994984598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bubble_wand_4
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be5caf3b36e914fe0800000000000000
-      internalID: -1206509074100075029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bubble_wand_5
+      name: Bubble_die_4
       rect:
         serializedVersion: 2
         x: 2560
         y: 0
-        width: 512
-        height: 512
+        width: 640
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,52 +258,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa413a06805d1a350800000000000000
-      internalID: 6026332008356189354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bubble_wand_6
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f9f59a6b4b228970800000000000000
-      internalID: 8755608228472420854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bubble_wand_7
-      rect:
-        serializedVersion: 2
-        x: 3584
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b4acd1e148c42f50800000000000000
-      internalID: 6855824718052500656
+      spriteID: 4b1db3ade350eacf0800000000000000
+      internalID: -239247962696592972
       vertices: []
       indices: 
       edges: []
@@ -316,7 +268,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0828ee04faa1bd740bc2cda83f147d92
+    spriteID: 8f5319ad898203a48a8e7342d4a77ab8
     internalID: 0
     vertices: []
     indices: 
@@ -326,14 +278,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bubble_wand_0: -4561323317386328818
-      Bubble_wand_1: -145557162241709016
-      Bubble_wand_2: 6043068647675824843
-      Bubble_wand_3: -7720205468115685899
-      Bubble_wand_4: -1206509074100075029
-      Bubble_wand_5: 6026332008356189354
-      Bubble_wand_6: 8755608228472420854
-      Bubble_wand_7: 6855824718052500656
+      Bubble_die_0: 8110567383642796410
+      Bubble_die_1: 2805932428444564712
+      Bubble_die_2: -5214706768663986471
+      Bubble_die_3: 8832966508994984598
+      Bubble_die_4: -239247962696592972
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
