@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
 
     public void RespawnBubble() {
         fp.SetActive(true);
-        Debug.Log(bubble); 
+        Debug.Log(bubblePrefab); 
         bubble = Instantiate(bubblePrefab, checkpoint, UnityEngine.Quaternion.identity);
        // Instantiate(fp, checkpoint, UnityEngine.Quaternion.identity);
         bubble.manager = this;
