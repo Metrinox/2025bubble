@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bubble gun_0: -1382792373197445748
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

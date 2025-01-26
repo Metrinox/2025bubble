@@ -5,6 +5,7 @@ public class PatrolEnemySpawner : MonoBehaviour
     [Header("Spawner Settings")]
     public GameObject patrolEnemyPrefab;  // The prefab with HorizontalPatrol script
     public float spawnInterval = 5f;      // How often a new enemy spawns
+    public int initialSpawnCount = 5;
 
     [Tooltip("If you want each spawned enemy at a specific Y or random Y, adjust here.")]
     public float fixedYPosition = 0f;     // We'll spawn them at this Y by default
@@ -13,6 +14,14 @@ public class PatrolEnemySpawner : MonoBehaviour
     public float maxY = 3f;
 
     private float timer = 0f;
+
+    private void Start()
+    {
+        for (int i = 0; i < initialSpawnCount; i++)
+        {
+            SpawnEnemy();
+        }
+    }
 
     void Update()
     {

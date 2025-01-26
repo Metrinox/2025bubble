@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1fca10f674540c4c8dd4cf79d9dafed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumAge: 3
-  otherForce: 10
+  maximumAge: 5
+  isBigBubble: 1
 --- !u!1 &7470555871012339043
 GameObject:
   m_ObjectHideFlags: 0
