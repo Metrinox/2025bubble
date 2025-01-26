@@ -7,7 +7,7 @@ public class BubbleGunShoot : MonoBehaviour
     public float startXOffset = 0.0f;
     public float startYOffset = 0.0f;
 
-    public float thrust = 200.0f;
+    public float thrust = 0f;
     public float bubblesPerSecond = 20.0f;
     public float angularSpray = 15.0f;
     public Vector3 gunDirection = new Vector3(1, 0, 0);

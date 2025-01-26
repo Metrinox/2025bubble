@@ -12,11 +12,16 @@ TagManager:
   - Death
   - Bubble
   - BounsBubble
+  - Bird
+  - Barracuda
+  - Raindrop
+  - Pressure Zone
+  - Projectile
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Background
   - Water
   - UI
   - 

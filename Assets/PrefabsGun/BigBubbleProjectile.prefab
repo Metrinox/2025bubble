@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6840763735530369558}
   m_Layer: 0
   m_Name: BigBubbleProjectile
-  m_TagString: Friendly
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.059641, y: 0.73472023, z: -0.24768129}
-  m_LocalScale: {x: 1.9999999, y: 1.9999999, z: 1.9999999}
+  m_LocalScale: {x: 1.9646399, y: 1.9646399, z: 1.9646399}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1726303633522170525}
@@ -96,8 +96,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.005951166, y: 0}
-  m_Radius: 0.24409723
+  m_Offset: {x: -0.0021743148, y: 0}
+  m_Radius: 0.37181997
 --- !u!114 &6840763735530369558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumAge: 3
+  otherForce: 10
 --- !u!1 &7470555871012339043
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +139,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2565, y: 0.2565, z: 0.2565}
+  m_LocalScale: {x: 0.38642198, y: 0.38642198, z: 0.38642198}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7827456160513011680}

@@ -42,11 +42,11 @@ public class GunAim : MonoBehaviour
         if (direction.x < 0)
         {
             transform.localScale = new Vector3(1, -1, 1);
-            if (direction.x < -0.5f) transform.localPosition = new Vector3(-0.5f, -0.2f, 0);
+            if (direction.x < -0.5f) transform.localPosition = new Vector3(-0.6f, -0.2f, 0);
         } else 
         {
             transform.localScale = Vector3.one;
-            if (direction.x > 0.5f) transform.localPosition = new Vector3(0.5f, -0.2f, 0);
+            if (direction.x > 0.5f) transform.localPosition = new Vector3(0.6f, -0.2f, 0);
         }
 
 

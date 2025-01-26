@@ -5,6 +5,7 @@ public class BubbleBehavior : MonoBehaviour
 
     private float age = 0.0f;
     public float maximumAge = 3.0f;
+    public float otherForce = 10.0f;
     //public float noise = 3.0f;
 
     // Update is called once per frame
@@ -26,6 +27,15 @@ public class BubbleBehavior : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (!other.gameObject.CompareTag("Friendly") && !other.gameObject.CompareTag("Player")) Destroy(gameObject);
+        GameObject go = other.gameObject;
+        //Rigidbody2D rb_other = go.GetComponent<Rigidbody2D>();
+
+        //if (rb_other != null)
+        //{
+        //    rb_other.AddForce(transform.rotation * Vector3.up * otherForce);
+        //}
+
+        if (!go.CompareTag("Friendly") && !go.CompareTag("Player") && !go.CompareTag("Projectile")) Destroy(gameObject);
+
     }
 }

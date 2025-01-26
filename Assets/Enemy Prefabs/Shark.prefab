@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8573612660730833957}
   - component: {fileID: 3043697518046710228}
   m_Layer: 0
-  m_Name: barracudaPrefab
+  m_Name: Shark
   m_TagString: Barracuda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,8 +32,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.48735, y: 0.48735, z: 0.48735}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.82, y: 0.82, z: 0.82}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45,15 +45,15 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964266650192159386}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 30
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 7af0ae0a0e2717f4196876c202bd7dfa, type: 2}
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -76,12 +76,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8cf85b91f5a3415c8cfa60113d22ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  approachSpeed: 1
-  dashSpeed: 8
+  approachSpeed: 2
+  dashSpeed: 10
   stopBeforeChargeTime: 0.7
-  chargeUpTime: 0.3
+  chargeUpTime: 1.5
   dashTime: 1
-  cooldownTime: 2
+  cooldownTime: 3
 --- !u!95 &2665379348574467270
 Animator:
   serializedVersion: 7
@@ -92,7 +92,7 @@ Animator:
   m_GameObject: {fileID: 964266650192159386}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3a489e6bd5819394490dcb030ea2c215, type: 2}
+  m_Controller: {fileID: 9100000, guid: 56963b57d32fb3b44a070cf165b282b8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -147,8 +147,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: -8567620471142164991, guid: a1a59243c7ff79641aa9635c0b1e0fd7, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 5746764926269108267, guid: 96fa5827f12bb94439e801d00bfa0b65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -234,7 +234,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.8599997, y: 3.543457}
+    oldSize: {x: 9.62, y: 4.5}
     newSize: {x: 7.8599997, y: 3.543457}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
