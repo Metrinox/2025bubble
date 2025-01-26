@@ -17,6 +17,8 @@ TagManager:
   - Raindrop
   - Pressure Zone
   - Projectile
+  - Enemy
+  - BubbleBubble
   layers:
   - Default
   - TransparentFX
