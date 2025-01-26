@@ -134,8 +134,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7827456160513011680}
   - component: {fileID: 8078733235633086986}
-  - component: {fileID: 5590262151675689991}
   - component: {fileID: 6840763735530369558}
+  - component: {fileID: 7942651661564023980}
+  - component: {fileID: 5590262151675689991}
   m_Layer: 0
   m_Name: BigBubbleProjectile
   m_TagString: Projectile
@@ -153,7 +154,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.059641, y: 0.73472023, z: -0.24768129}
-  m_LocalScale: {x: 1.9646399, y: 1.9646399, z: 1.9646399}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1726303633522170525}
@@ -187,6 +188,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &6840763735530369558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156208543933187370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fca10f674540c4c8dd4cf79d9dafed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maximumAge: 5
+  isBigBubble: 1
+--- !u!111 &7942651661564023980
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156208543933187370}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!58 &5590262151675689991
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -197,7 +228,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 7af0ae0a0e2717f4196876c202bd7dfa, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -221,22 +252,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0021743148, y: 0}
-  m_Radius: 0.37181997
---- !u!114 &6840763735530369558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3156208543933187370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1fca10f674540c4c8dd4cf79d9dafed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maximumAge: 5
-  isBigBubble: 1
+  m_Offset: {x: -0.006316901, y: 0}
+  m_Radius: 0.39261344
 --- !u!1 &7470555871012339043
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1726303633522170525}
   - component: {fileID: 2330370164984225565}
+  - component: {fileID: 4560224233505379365}
   m_Layer: 0
   m_Name: images_0
   m_TagString: Untagged
@@ -264,7 +282,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.38642198, y: 0.38642198, z: 0.38642198}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7827456160513011680}
@@ -313,7 +331,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 8957324059118975939, guid: 9a502df60bab6ed49bd2f08294171a31, type: 3}
+  m_Sprite: {fileID: -9136834448258697486, guid: b53d4966cd873a8499a84c2e78eac0cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -324,3 +342,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4560224233505379365
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470555871012339043}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f73108c193cb914f90ef3b0bdeac9b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
