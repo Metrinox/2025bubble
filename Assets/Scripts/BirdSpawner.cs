@@ -24,7 +24,6 @@ public class BirdSpawner : MonoBehaviour
 
     void SpawnBird()
     {
-        
         bool fromLeft = (Random.value < 0.5f);
 
         float spawnY = Random.Range(minY, maxY);
@@ -34,7 +33,14 @@ public class BirdSpawner : MonoBehaviour
 
         GameObject newBird = Instantiate(birdPrefab, spawnPos, Quaternion.identity);
 
+        // flip the sprite if it's coming from the left
+        SpriteRenderer sr = newBird.GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            sr.flipX = fromLeft;
+        }
+
         Bird birdScript = newBird.GetComponent<Bird>();
-        birdScript.movingRight = fromLeft; // if fromLeft, then  move to  right
+        birdScript.movingRight = fromLeft; 
     }
 }

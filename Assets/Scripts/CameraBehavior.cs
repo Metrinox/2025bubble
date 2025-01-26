@@ -7,7 +7,7 @@ using UnityEngine;
 public class CameraBehavior : MonoBehaviour
 {
     public Bubble player;
-    public float lerpSpeed = 1.0f;
+    public float lerpSpeed = 5.0f;
 
     private Vector3 offset;
 

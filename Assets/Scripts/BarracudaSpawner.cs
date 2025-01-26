@@ -4,6 +4,7 @@ public class BarracudaSpawner : MonoBehaviour
 {
     public GameObject barracudaPrefab;
     public float spawnInterval = 5f;
+    public int initialSpawnCount = 2;
 
     public float minX = -8f;
     public float maxX = 8f;
@@ -11,6 +12,14 @@ public class BarracudaSpawner : MonoBehaviour
     public float maxY = 4f;
 
     private float timer = 0f;
+
+    private void Start()
+    {
+        for (int i = 0; i < initialSpawnCount; i++)
+        {
+            SpawnBarracuda();
+        }
+    }
 
     void Update()
     {

@@ -8,23 +8,28 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public UnityEngine.Vector3 checkpoint = new UnityEngine.Vector3(0,0);
+    public UnityEngine.Vector3 checkpoint;
     public CameraBehavior camera;
     public Bubble bubblePrefab;
+    public GameObject fp;
     public Bubble bubble;
     public TextMeshProUGUI respawnText;
     public TextMeshProUGUI respawnCountDown;
     public List<GameObject> disabled = new List<GameObject> {};
     public void Start()
     {
+        checkpoint = new UnityEngine.Vector3(0, 0);
+        fp = GameObject.Find("FollowPlayer");
         respawnCountDown.enabled = false;
         respawnText.enabled = false;
-        ResetEnemy();
-        RespawnBubble();
+        //ResetEnemy();
+        RespawnBubble() ;
     }
 
     public void RespawnBubble() {
+        fp.SetActive(true);
         Bubble bubble = Instantiate(bubblePrefab, checkpoint, UnityEngine.Quaternion.identity);
+       // Instantiate(fp, checkpoint, UnityEngine.Quaternion.identity);
         bubble.manager = this;
         camera.player = bubble;
         camera.transform.position = new UnityEngine.Vector3(bubble.transform.position.x,bubble.transform.position.z, camera.transform.position.z);
@@ -38,19 +43,19 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(CountDown(3));
     }
 
-    public void ResetEnemy() {
-        GameObject[] chasers = GameObject.FindGameObjectsWithTag("Enemy");
-        foreach (GameObject obj in chasers) {
-            Enemy enemy = obj.GetComponent<Enemy>();
-            enemy.manager = this;
-            // chaser.manager = this;
-            enemy.Reset();
-        }
-    }
+    //public void ResetEnemy() {
+    //    GameObject[] chasers = GameObject.FindGameObjectsWithTag("Enemy");
+    //    foreach (GameObject obj in chasers) {
+    //        Enemy enemy = obj.GetComponent<Enemy>();
+    //        enemy.manager = this;
+    //        // chaser.manager = this;
+    //        enemy.Reset();
+    //    }
+    //}
 
     public IEnumerator CountDown(int n)
     {
-        ResetEnemy();
+        //ResetEnemy();
         // Iterate through the list in reverse
         for (int i = disabled.Count - 1; i >= 0; i--)
         {

@@ -30,11 +30,13 @@ public class Bubble : MonoBehaviour
     public float range;
 
     public Animator animator;
+    private GameObject fp;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        fp = GameObject.Find("FollowPlayer");
 
         // not necessary, but just in case we messed up with the params
         // transform.localScale = new Vector3(size/maxSize, size/maxSize, transform.localScale.z);
@@ -122,7 +124,7 @@ public class Bubble : MonoBehaviour
             collision.gameObject.SetActive(false);
         } else if (collision.transform.CompareTag("BubbleBubble")){
             
-        } else {
+        } else if (collision.transform.CompareTag("Enemy")){
             StartCoroutine(Die());
         }
 
@@ -209,8 +211,14 @@ public class Bubble : MonoBehaviour
     public IEnumerator Die() {
         animator.Play("die");
         yield return new WaitForSeconds(1);
-        Destroy(gameObject, 0);
+        
         manager.Die();
+
+        
+        fp.SetActive(false);
+
+        //if (gun != null) Destroy(gun);
+        Destroy(gameObject, 0);
     }
 
     public void Destroy() {
