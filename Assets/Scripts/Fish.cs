@@ -8,7 +8,7 @@ public class HorizontalPatrol : MonoBehaviour
     public float maxX = 8.8f;       // The maximum X boundary for the patrol points
     public float patrolY = 0f;    // The Y-position at which this enemy patrols (fixed)
     public float speed = 2f;      // Movement speed
-    public float escapeVelocity = 5f; // Speed at which fish escapes at
+    public float escapeVelocity = 6f; // Speed at which fish escapes at
     public float maxAge = 10.0f;
 
     private Vector2 pointA;       // First random endpoint
@@ -36,8 +36,10 @@ public class HorizontalPatrol : MonoBehaviour
 
     void Update()
     {
+        Vector2 prevPosition;
         if (!isEscaping)
         {
+            prevPosition = transform.position;
             transform.position = Vector2.MoveTowards(
                 transform.position,
                 target,
@@ -48,13 +50,19 @@ public class HorizontalPatrol : MonoBehaviour
             {
                 target = (target == pointA) ? pointB : pointA;
             }
+
+            transform.localScale = (prevPosition.x < transform.position.x)? Vector3.one: new (-1, 1, 1);
         }
         else
         {
             transform.position += escapeDirection * Time.deltaTime * escapeVelocity;
+            transform.localScale = (escapeDirection.x > 0) ? Vector3.one : new(-1, 1, 1);
+
         }
         currentAge -= Time.deltaTime;
         if (currentAge < 0f) Destroy(gameObject);
+
+        
     }
 
     void OnCollisionEnter2D(Collision2D other)

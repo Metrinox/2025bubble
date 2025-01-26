@@ -12,6 +12,7 @@ public class Barracuda : MonoBehaviour
     public float chargeUpTime = 1.5f;
     public float dashTime = 1f;
     public float cooldownTime = 2f;
+    public float scale = 0.82f;
 
     private Transform player;
 
@@ -38,6 +39,8 @@ public class Barracuda : MonoBehaviour
         {
             Vector2 direction = (player.position - transform.position).normalized;
             transform.Translate(direction * approachSpeed * Time.deltaTime);
+
+            transform.localScale = (direction.x < 0) ? Vector3.one * scale : new Vector3(-1, 1, 1) * scale;
         }
     }
 
