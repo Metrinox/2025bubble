@@ -115,7 +115,7 @@ public class Bubble : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
+        Debug.Log(collision.transform.tag); 
         if (collision.transform.CompareTag("BounsBubble")) {
             size += collision.gameObject.GetComponent<BounsBubble>().size;
             Debug.Log(size);

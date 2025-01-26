@@ -7,6 +7,8 @@ public class FollowPlayerScript : MonoBehaviour
     void Update()
     {
         GameObject go = GameObject.FindGameObjectWithTag("Player");
-        transform.position = go.transform.position;
+        if (go != null) {
+            transform.position = go.transform.position;
+        } 
     }
 }

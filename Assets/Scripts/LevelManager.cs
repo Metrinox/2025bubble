@@ -28,7 +28,8 @@ public class LevelManager : MonoBehaviour
 
     public void RespawnBubble() {
         fp.SetActive(true);
-        Bubble bubble = Instantiate(bubblePrefab, checkpoint, UnityEngine.Quaternion.identity);
+        Debug.Log(bubble); 
+        bubble = Instantiate(bubblePrefab, checkpoint, UnityEngine.Quaternion.identity);
        // Instantiate(fp, checkpoint, UnityEngine.Quaternion.identity);
         bubble.manager = this;
         camera.player = bubble;
@@ -55,6 +56,7 @@ public class LevelManager : MonoBehaviour
 
     public IEnumerator CountDown(int n)
     {
+        Debug.Log("Respawn countdown");
         //ResetEnemy();
         // Iterate through the list in reverse
         for (int i = disabled.Count - 1; i >= 0; i--)
